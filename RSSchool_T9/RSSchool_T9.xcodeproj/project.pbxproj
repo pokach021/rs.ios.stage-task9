@@ -25,6 +25,11 @@
 		2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9F30D26AF5FA900F43852 /* story-4-path.swift */; };
 		2BB9F31026AF5FB300F43852 /* s4-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F30F26AF5FB300F43852 /* s4-text.txt */; };
 		2BB9F31226AF5FBE00F43852 /* s4-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F31126AF5FBE00F43852 /* s4-title.txt */; };
+		D9181A1126B13A8E009C6957 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9181A1026B13A8E009C6957 /* MainViewController.swift */; };
+		D9181A1C26B14D39009C6957 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9181A1B26B14D39009C6957 /* Colors.swift */; };
+		D9181A2326B16536009C6957 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9181A2226B16536009C6957 /* SettingsViewController.m */; };
+		D9181A2926B1717C009C6957 /* SettingsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9181A2826B1717C009C6957 /* SettingsTableViewCell.m */; };
+		D9181A2F26B18DE8009C6957 /* ColorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9181A2E26B18DE8009C6957 /* ColorsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +53,15 @@
 		2BB9F30D26AF5FA900F43852 /* story-4-path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "story-4-path.swift"; sourceTree = "<group>"; };
 		2BB9F30F26AF5FB300F43852 /* s4-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-text.txt"; sourceTree = "<group>"; };
 		2BB9F31126AF5FBE00F43852 /* s4-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-title.txt"; sourceTree = "<group>"; };
+		D9181A1026B13A8E009C6957 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D9181A1B26B14D39009C6957 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D9181A2026B16536009C6957 /* RSSchool_T9-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T9-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9181A2126B16536009C6957 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		D9181A2226B16536009C6957 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		D9181A2726B1717C009C6957 /* SettingsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewCell.h; sourceTree = "<group>"; };
+		D9181A2826B1717C009C6957 /* SettingsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewCell.m; sourceTree = "<group>"; };
+		D9181A2D26B18DE8009C6957 /* ColorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorsViewController.h; sourceTree = "<group>"; };
+		D9181A2E26B18DE8009C6957 /* ColorsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +94,7 @@
 		2BB9E75A26AB605700112651 /* RSSchool_T9 */ = {
 			isa = PBXGroup;
 			children = (
+				D9181A0F26B13A32009C6957 /* ViewControllers */,
 				2BB9F28F26ADFAEB00F43852 /* Data */,
 				2BB9E75B26AB605700112651 /* AppDelegate.swift */,
 				2BB9E75D26AB605700112651 /* SceneDelegate.swift */,
@@ -94,6 +109,7 @@
 		2BB9F28F26ADFAEB00F43852 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				D9181A1626B14CE2009C6957 /* Extensions */,
 				2BB9F29226AE017D00F43852 /* Static */,
 				2BB9F29026ADFAF100F43852 /* Data.swift */,
 			);
@@ -151,6 +167,45 @@
 			path = "story-4";
 			sourceTree = "<group>";
 		};
+		D9181A0F26B13A32009C6957 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9181A1F26B163DB009C6957 /* ObjC */,
+				D9181A1026B13A8E009C6957 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D9181A1626B14CE2009C6957 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9181A1B26B14D39009C6957 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D9181A1F26B163DB009C6957 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				D9181A2B26B17183009C6957 /* Cells */,
+				D9181A2126B16536009C6957 /* SettingsViewController.h */,
+				D9181A2226B16536009C6957 /* SettingsViewController.m */,
+				D9181A2D26B18DE8009C6957 /* ColorsViewController.h */,
+				D9181A2E26B18DE8009C6957 /* ColorsViewController.m */,
+				D9181A2026B16536009C6957 /* RSSchool_T9-Bridging-Header.h */,
+			);
+			path = ObjC;
+			sourceTree = "<group>";
+		};
+		D9181A2B26B17183009C6957 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D9181A2726B1717C009C6957 /* SettingsTableViewCell.h */,
+				D9181A2826B1717C009C6957 /* SettingsTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,7 +239,7 @@
 				TargetAttributes = {
 					2BB9E75726AB605700112651 = {
 						CreatedOnToolsVersion = 12.5.1;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -233,12 +288,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB9F30126AF557E00F43852 /* story-2-path.swift in Sources */,
+				D9181A2926B1717C009C6957 /* SettingsTableViewCell.m in Sources */,
+				D9181A1C26B14D39009C6957 /* Colors.swift in Sources */,
 				2BB9E75C26AB605700112651 /* AppDelegate.swift in Sources */,
 				2BB9F30B26AF5EEC00F43852 /* story-3-path.swift in Sources */,
 				2BB9F29126ADFAF100F43852 /* Data.swift in Sources */,
+				D9181A2F26B18DE8009C6957 /* ColorsViewController.m in Sources */,
 				2BB9F2EC26AF1F6200F43852 /* story-1-path.swift in Sources */,
 				2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */,
 				2BB9E75E26AB605700112651 /* SceneDelegate.swift in Sources */,
+				D9181A2326B16536009C6957 /* SettingsViewController.m in Sources */,
+				D9181A1126B13A8E009C6957 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -370,7 +430,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -395,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/ViewControllers/ObjC/RSSchool_T9-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -416,6 +477,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.username.RSSchool-T9";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RSSchool_T9/ViewControllers/ObjC/RSSchool_T9-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

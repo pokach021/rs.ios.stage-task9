@@ -3,7 +3,7 @@
 // Project: RSSchool_T9
 // 
 // Author: Andrew Pokachailo
-// On: 7/28/21
+// On: 7/29/21
 // 
 // Copyright © 2021 RSSchool. All rights reserved.
 
@@ -11,7 +11,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ColorsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@class ColorItem;
+
+@interface CollorsTableViewCell : UITableViewCell
+
+- (void)configureWithColorItem:(ColorItem *)colorItem;
 
 @end
 

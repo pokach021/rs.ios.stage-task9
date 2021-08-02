@@ -30,14 +30,23 @@
     self.navigationItem.title = @"Settings";
     self.navigationController.navigationBar.barTintColor = UIColor.whiteColor;
     
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(36, 120, 343, 104)];
+    self.tableView = [[UITableView alloc] init];
     self.tableView.layer.cornerRadius = 16;
+    self.tableView.translatesAutoresizingMaskIntoConstraints = false;
+    [self.tableView setScrollEnabled:NO];
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.backgroundColor = UIColor.whiteColor;
     [self.tableView registerClass:SettingsTableViewCell.class forCellReuseIdentifier:@"CellId"];
     [self.view addSubview:self.tableView];
+    
+    [NSLayoutConstraint activateConstraints:@[
+        [self.tableView.leadingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.leadingAnchor constant:20],
+        [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:-20],
+        [self.tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:34],
+        [self.tableView.heightAnchor constraintEqualToConstant:104]
+    ]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -55,10 +64,10 @@
         [switchView setOn:YES animated:YES];
         cell.accessoryView = switchView;
     } else {
+        cell = [[SettingsTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"CellId"];
         cell.textLabel.text = @"Stroke color";
-        cell.selectionStyle = UITableViewCellStyleSubtitle;
         [cell setAccessoryType:UITableViewCellAccessoryDisclosureIndicator];
-       
+        cell.detailTextLabel.text = @"a";
         
     }
     return cell;

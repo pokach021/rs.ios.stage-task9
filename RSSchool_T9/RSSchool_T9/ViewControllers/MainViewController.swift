@@ -54,9 +54,8 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       // let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellid", for: indexPath) as! MainCollectionViewCell
-        let vc = GalleryViewController(number: indexPath.row)
-        vc.setContetntType()
+        let vc = DetailViewController()
+        vc.setDetails(index: indexPath.row)
         vc.modalPresentationStyle = .fullScreen
         self.navigationController?.present(vc, animated: true, completion: nil)
     }

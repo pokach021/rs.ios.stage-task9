@@ -61,11 +61,11 @@ class MainCollectionViewCell: UICollectionViewCell {
             subTitle.heightAnchor.constraint(equalToConstant: (self.frame.height * 0.06) + 1)
         ])
         
-        let shadowLayer = CAGradientLayer()
-        shadowLayer.frame = imageView.bounds
-        shadowLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
-        shadowLayer.locations = [0.7, 1.0]
-        imageView.layer.insertSublayer(shadowLayer, at: 0)
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = imageView.bounds
+        gradientLayer.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+        gradientLayer.locations = [0.7, 1.0]
+        imageView.layer.insertSublayer(gradientLayer, at: 0)
         
         switch FillingData.data[index]{
         case .story(let story):

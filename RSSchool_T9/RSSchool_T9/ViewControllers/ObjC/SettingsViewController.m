@@ -46,6 +46,7 @@
         [self.tableView.trailingAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.trailingAnchor constant:-20],
         [self.tableView.topAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.topAnchor constant:34],
         [self.tableView.heightAnchor constraintEqualToConstant:104]
+        
     ]];
 }
 

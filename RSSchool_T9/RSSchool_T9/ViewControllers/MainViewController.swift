@@ -12,8 +12,8 @@ import UIKit
 class MainViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout());
-
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +41,12 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
             collectionView.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
-
-
+    
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return FillingData.data.count
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellid", for: indexPath) as! MainCollectionViewCell
         cell.setup(index: indexPath.row)
@@ -54,12 +54,11 @@ class MainViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellid", for: indexPath) as! MainCollectionViewCell
-        if cell.subTitle.text == "Story"  {
-            self.navigationController?.pushViewController(StoryViewController(), animated: true)
-        } else {
-            self.navigationController?.pushViewController(GalleryViewController(), animated: false)
-        }
+       // let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCellid", for: indexPath) as! MainCollectionViewCell
+        let vc = GalleryViewController(number: indexPath.row)
+        vc.setContetntType()
+        vc.modalPresentationStyle = .fullScreen
+        self.navigationController?.present(vc, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

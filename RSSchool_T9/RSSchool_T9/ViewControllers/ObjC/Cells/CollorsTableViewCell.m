@@ -43,6 +43,7 @@
 - (void)configureWithColorItem:(ColorItem *)colorItem {
     self.titleLabel.text = colorItem.title;
     self.titleLabel.textColor = colorItem.color;
+    self.tintColor = UIColor.redColor;
 
 }
 

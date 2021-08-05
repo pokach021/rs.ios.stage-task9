@@ -63,39 +63,11 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         typeLabel.padding(8, 3, 30, 30)
         return typeLabel
     }()
-    
-    let pathScrollView: UIScrollView = {
-        let flowLayout = UICollectionViewFlowLayout()
-        let pathScrollView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-        flowLayout.scrollDirection = .horizontal
-        pathScrollView.translatesAutoresizingMaskIntoConstraints = false
-        pathScrollView.showsHorizontalScrollIndicator = false
-        pathScrollView.backgroundColor = .black
-       // pathScrollView.layer.cornerRadius = 8
-        //pathScrollView.layer.borderWidth = 1
-        //pathScrollView.layer.borderColor = UIColor.white.cgColor
-        return pathScrollView
-    }()
-    
-    
+
     let closeButton: CloseButton = {
         let closeButton = CloseButton.init()
         closeButton.addTarget(self, action: #selector(closeVC(_:)), for: .touchUpInside)
         return closeButton
-    }()
-    
-    let textLabel: UITextView = {
-        let textLabel = UITextView()
-        textLabel.isScrollEnabled = false
-        textLabel.translatesAutoresizingMaskIntoConstraints = false
-        textLabel.backgroundColor = .black
-        textLabel.layer.cornerRadius = 8
-        textLabel.layer.borderWidth = 1
-        textLabel.layer.borderColor = UIColor.white.cgColor
-        textLabel.textContainerInset = UIEdgeInsets(top: 30, left: 30, bottom: 30, right: 40)
-        textLabel.font = UIFont(name: "Rockwell-Regular", size: 24)
-        textLabel.textColor = .white
-        return textLabel
     }()
     
     let imageView: UIImageView = {
@@ -124,7 +96,7 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setup()
+        //self.setup()
         
     }
     
@@ -192,42 +164,6 @@ class DetailViewController: UIViewController, UIScrollViewDelegate {
         
         
         
-    }
-    
-    func setDetails(index: Int) {
-        switch item[index] {
-        case .gallery(let gallery):
-            mainImageView.image = gallery.coverImage
-            typeLabel.text = gallery.type
-            titleLabel.text = gallery.title
-            
-            
-            
-           
-        case .story(let story):
-            mainImageView.image = story.coverImage
-            typeLabel.text = story.type
-            titleLabel.text = story.title
-            textLabel.text = story.text
-            scrollView.addSubview(pathScrollView)
-            NSLayoutConstraint.activate([
-                pathScrollView.topAnchor.constraint(equalTo: line.bottomAnchor, constant: 40),
-                pathScrollView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
-                pathScrollView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
-                pathScrollView.centerXAnchor.constraint(equalTo: line.centerXAnchor),
-                pathScrollView.heightAnchor.constraint(equalToConstant: 100)
-            ])
-            scrollView.addSubview(textLabel)
-            NSLayoutConstraint.activate([
-                textLabel.topAnchor.constraint(equalTo: pathScrollView.bottomAnchor, constant: 40),
-                textLabel.leftAnchor.constraint(equalTo: scrollView.leftAnchor, constant: 20),
-                textLabel.rightAnchor.constraint(equalTo: scrollView.rightAnchor, constant: -20),
-                textLabel.centerXAnchor.constraint(equalTo: pathScrollView.centerXAnchor),
-                textLabel.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -30)
-            ])
-            
-            
-        }
     }
     
     @objc func closeVC(_ sender: UIButton) {

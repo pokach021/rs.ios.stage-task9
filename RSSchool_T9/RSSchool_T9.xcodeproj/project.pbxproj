@@ -25,6 +25,13 @@
 		2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB9F30D26AF5FA900F43852 /* story-4-path.swift */; };
 		2BB9F31026AF5FB300F43852 /* s4-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F30F26AF5FB300F43852 /* s4-text.txt */; };
 		2BB9F31226AF5FBE00F43852 /* s4-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2BB9F31126AF5FBE00F43852 /* s4-title.txt */; };
+		D915DC5E26BBD80500785688 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915DC5D26BBD80500785688 /* StoryViewController.swift */; };
+		D915DC6126BBD81C00785688 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915DC6026BBD81C00785688 /* GalleryViewController.swift */; };
+		D915DC6426BBDB4900785688 /* ShowStoryGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D915DC6326BBDB4900785688 /* ShowStoryGallery.swift */; };
+		D915DC7026BBF04E00785688 /* s5-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = D915DC6F26BBF04E00785688 /* s5-title.txt */; };
+		D915DC7326BBF0B500785688 /* s5-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = D915DC7226BBF0B500785688 /* s5-text.txt */; };
+		D915DC7826BBF22F00785688 /* s6-title.txt in Resources */ = {isa = PBXBuildFile; fileRef = D915DC7726BBF22F00785688 /* s6-title.txt */; };
+		D915DC7B26BBF24E00785688 /* s6-text.txt in Resources */ = {isa = PBXBuildFile; fileRef = D915DC7A26BBF24E00785688 /* s6-text.txt */; };
 		D9181A1126B13A8E009C6957 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9181A1026B13A8E009C6957 /* MainViewController.swift */; };
 		D9181A1C26B14D39009C6957 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9181A1B26B14D39009C6957 /* Colors.swift */; };
 		D9181A2326B16536009C6957 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9181A2226B16536009C6957 /* SettingsViewController.m */; };
@@ -60,6 +67,13 @@
 		2BB9F30D26AF5FA900F43852 /* story-4-path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "story-4-path.swift"; sourceTree = "<group>"; };
 		2BB9F30F26AF5FB300F43852 /* s4-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-text.txt"; sourceTree = "<group>"; };
 		2BB9F31126AF5FBE00F43852 /* s4-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s4-title.txt"; sourceTree = "<group>"; };
+		D915DC5D26BBD80500785688 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		D915DC6026BBD81C00785688 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		D915DC6326BBDB4900785688 /* ShowStoryGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowStoryGallery.swift; sourceTree = "<group>"; };
+		D915DC6F26BBF04E00785688 /* s5-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s5-title.txt"; sourceTree = "<group>"; };
+		D915DC7226BBF0B500785688 /* s5-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s5-text.txt"; sourceTree = "<group>"; };
+		D915DC7726BBF22F00785688 /* s6-title.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s6-title.txt"; sourceTree = "<group>"; };
+		D915DC7A26BBF24E00785688 /* s6-text.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "s6-text.txt"; sourceTree = "<group>"; };
 		D9181A1026B13A8E009C6957 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D9181A1B26B14D39009C6957 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D9181A2026B16536009C6957 /* RSSchool_T9-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RSSchool_T9-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -135,6 +149,8 @@
 		2BB9F29226AE017D00F43852 /* Static */ = {
 			isa = PBXGroup;
 			children = (
+				D915DC6926BBEFCE00785688 /* story-6 */,
+				D915DC6826BBEFBE00785688 /* story-5 */,
 				2BB9F30C26AF5F9C00F43852 /* story-4 */,
 				2BB9F30326AF5D7E00F43852 /* story-3 */,
 				2BB9F2FC26AF554C00F43852 /* story-2 */,
@@ -183,6 +199,24 @@
 			path = "story-4";
 			sourceTree = "<group>";
 		};
+		D915DC6826BBEFBE00785688 /* story-5 */ = {
+			isa = PBXGroup;
+			children = (
+				D915DC6F26BBF04E00785688 /* s5-title.txt */,
+				D915DC7226BBF0B500785688 /* s5-text.txt */,
+			);
+			path = "story-5";
+			sourceTree = "<group>";
+		};
+		D915DC6926BBEFCE00785688 /* story-6 */ = {
+			isa = PBXGroup;
+			children = (
+				D915DC7726BBF22F00785688 /* s6-title.txt */,
+				D915DC7A26BBF24E00785688 /* s6-text.txt */,
+			);
+			path = "story-6";
+			sourceTree = "<group>";
+		};
 		D9181A0F26B13A32009C6957 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +224,8 @@
 				D9181A1F26B163DB009C6957 /* ObjC */,
 				D9181A1026B13A8E009C6957 /* MainViewController.swift */,
 				D9C1666526BAB6D200B63D08 /* DetailViewController.swift */,
+				D915DC6026BBD81C00785688 /* GalleryViewController.swift */,
+				D915DC5D26BBD80500785688 /* StoryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -200,6 +236,7 @@
 				D9181A1B26B14D39009C6957 /* Colors.swift */,
 				D9C1664E26BA68AE00B63D08 /* PaddingLabel.swift */,
 				D9C1665E26BAAF6700B63D08 /* CloseButton.swift */,
+				D915DC6326BBDB4900785688 /* ShowStoryGallery.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -299,8 +336,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D915DC7326BBF0B500785688 /* s5-text.txt in Resources */,
 				2BB9E76826AB605900112651 /* LaunchScreen.storyboard in Resources */,
+				D915DC7B26BBF24E00785688 /* s6-text.txt in Resources */,
 				2BB9F30726AF5D9D00F43852 /* s3-text.txt in Resources */,
+				D915DC7026BBF04E00785688 /* s5-title.txt in Resources */,
 				2BB9F30926AF5DAF00F43852 /* s3-title.txt in Resources */,
 				2BB9F31226AF5FBE00F43852 /* s4-title.txt in Resources */,
 				2BB9F29526AE01A300F43852 /* s1-title.txt in Resources */,
@@ -309,6 +349,7 @@
 				2BB9E76526AB605900112651 /* Assets.xcassets in Resources */,
 				2BB9F30226AF57B500F43852 /* s2-text.txt in Resources */,
 				2BB9E76326AB605700112651 /* Main.storyboard in Resources */,
+				D915DC7826BBF22F00785688 /* s6-title.txt in Resources */,
 				2BB9F29726AE01B800F43852 /* s1-text.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -320,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D915DC5E26BBD80500785688 /* StoryViewController.swift in Sources */,
 				D9DF71DF26B26CC90060E6EE /* CollorsTableViewCell.m in Sources */,
 				2BB9F30126AF557E00F43852 /* story-2-path.swift in Sources */,
 				D9181A2926B1717C009C6957 /* SettingsTableViewCell.m in Sources */,
@@ -328,12 +370,14 @@
 				2BB9F30B26AF5EEC00F43852 /* story-3-path.swift in Sources */,
 				D9C1664F26BA68AE00B63D08 /* PaddingLabel.swift in Sources */,
 				D996CA0C26B9305400367AB8 /* GalleryCollectionViewCell.swift in Sources */,
+				D915DC6426BBDB4900785688 /* ShowStoryGallery.swift in Sources */,
 				D9DF71E326B26CEC0060E6EE /* ColorItem.m in Sources */,
 				D9C1666626BAB6D200B63D08 /* DetailViewController.swift in Sources */,
 				D9A172A826B406A70025F96A /* MainCollectionViewCell.swift in Sources */,
 				2BB9F29126ADFAF100F43852 /* Data.swift in Sources */,
 				D9181A2F26B18DE8009C6957 /* ColorsViewController.m in Sources */,
 				2BB9F2EC26AF1F6200F43852 /* story-1-path.swift in Sources */,
+				D915DC6126BBD81C00785688 /* GalleryViewController.swift in Sources */,
 				2BB9F30E26AF5FA900F43852 /* story-4-path.swift in Sources */,
 				2BB9E75E26AB605700112651 /* SceneDelegate.swift in Sources */,
 				D9C1665F26BAAF6700B63D08 /* CloseButton.swift in Sources */,
